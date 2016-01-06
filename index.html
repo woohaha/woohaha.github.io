@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>woo的夢囈之地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="woo的夢囈之地">
+<meta property="og:url" content="http://woohaha.github.io/index.html">
+<meta property="og:site_name" content="woo的夢囈之地">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="woo的夢囈之地">
 <meta name="twitter:description">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="woo的夢囈之地" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -33,8 +33,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">woo的夢囈之地</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一個證明我還活着的地方</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -53,13 +57,65 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://woohaha.github.io"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-Set-IME-By-Using-adb" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/01/06/Set-IME-By-Using-adb/" class="article-date">
+  <time datetime="2016-01-06T15:38:56.000Z" itemprop="datePublished">2016-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/06/Set-IME-By-Using-adb/">Set IME By Using adb</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近買了一個山寨行車記錄儀給老豆。把玩了一陣，發現是一個「深度開發」的Android。<br>所謂「深度開發」就是把系統設置刪得剩下兩三個，然後裝個自製的仿錘子Launcher，再將Home和Back做成浮動。<br>本來這種改動也沒影響到我。但老豆曰: </p>
+<blockquote>
+<p>##要有手寫輸入<br>問題就來了。</p>
+</blockquote>
+<p>安裝輸入法不是問題，附帶的軟件本來就有這個功能。<br>但問題是 <strong>系統被閹得不似人形，沒法勾選啟用新裝的輸入法</strong></p>
+<p>一翻搜索找到解決方法：<strong>用adb直接設置</strong></p>
+<ol>
+<li>用adb連接設備<br> adb shell</li>
+<li>列出所有已安裝的輸入法<br> ime list -a</li>
+<li>勾選想要的輸入法<br> ime set com.baidu_spec-1.service/.baiduIME</li>
+</ol>
+<h6 id="u5927_u529F_u544A_u6210_uFF01"><a href="#u5927_u529F_u544A_u6210_uFF01" class="headerlink" title="大功告成！"></a>大功告成！</h6><blockquote>
+<p>本篇無圖，因爲懶</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://woohaha.github.io/2016/01/06/Set-IME-By-Using-adb/" data-id="cij30kb4a0003f0p6glw44hel" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hacks/">Hacks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Skills/">Skills</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Hello-World" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -88,7 +144,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/06/Hello-World/" data-id="cij2yvjcn0000iop6kshlg0b8" class="article-share-link">Share</a>
+      <a data-url="http://woohaha.github.io/2016/01/06/Hello-World/" data-id="cij30kb1e0000f0p6nvvo0pim" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/閒話/">閒話</a></li></ul>
@@ -111,7 +167,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/閒話/">閒話</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hacks/">Hacks</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Skills/">Skills</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/閒話/">閒話</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -120,7 +176,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/閒話/" style="font-size: 10px;">閒話</a>
+      <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Hacks/" style="font-size: 10px;">Hacks</a> <a href="/tags/Skills/" style="font-size: 10px;">Skills</a> <a href="/tags/閒話/" style="font-size: 10px;">閒話</a>
     </div>
   </div>
 
@@ -129,7 +185,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -139,6 +195,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/01/06/Set-IME-By-Using-adb/">Set IME By Using adb</a>
+          </li>
         
           <li>
             <a href="/2016/01/06/Hello-World/">Hello World</a>
@@ -156,7 +216,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
+      &copy; 2016 Nicolas 911<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

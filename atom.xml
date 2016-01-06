@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Hexo]]></title>
-  
+  <title><![CDATA[woo的夢囈之地]]></title>
+  <subtitle><![CDATA[一個證明我還活着的地方]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2016-01-06T15:15:50.178Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://woohaha.github.io/"/>
+  <updated>2016-01-06T16:02:05.399Z</updated>
+  <id>http://woohaha.github.io/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
+    <name><![CDATA[Nicolas 911]]></name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Set IME By Using adb]]></title>
+    <link href="http://woohaha.github.io/2016/01/06/Set-IME-By-Using-adb/"/>
+    <id>http://woohaha.github.io/2016/01/06/Set-IME-By-Using-adb/</id>
+    <published>2016-01-06T15:38:56.000Z</published>
+    <updated>2016-01-06T16:02:05.399Z</updated>
+    <content type="html"><![CDATA[<p>最近買了一個山寨行車記錄儀給老豆。把玩了一陣，發現是一個「深度開發」的Android。<br>所謂「深度開發」就是把系統設置刪得剩下兩三個，然後裝個自製的仿錘子Launcher，再將Home和Back做成浮動。<br>本來這種改動也沒影響到我。但老豆曰: </p>
+<blockquote>
+<p>##要有手寫輸入<br>問題就來了。</p>
+</blockquote>
+<p>安裝輸入法不是問題，附帶的軟件本來就有這個功能。<br>但問題是 <strong>系統被閹得不似人形，沒法勾選啟用新裝的輸入法</strong></p>
+<p>一翻搜索找到解決方法：<strong>用adb直接設置</strong></p>
+<ol>
+<li>用adb連接設備<br> adb shell</li>
+<li>列出所有已安裝的輸入法<br> ime list -a</li>
+<li>勾選想要的輸入法<br> ime set com.baidu_spec-1.service/.baiduIME</li>
+</ol>
+<h6 id="u5927_u529F_u544A_u6210_uFF01"><a href="#u5927_u529F_u544A_u6210_uFF01" class="headerlink" title="大功告成！"></a>大功告成！</h6><blockquote>
+<p>本篇無圖，因爲懶</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近買了一個山寨行車記錄儀給老豆。把玩了一陣，發現是一個「深度開發」的Android。<br>所謂「深度開發」就是把系統設置刪得剩下兩三個，然後裝個自製的仿錘子Launcher，再將Home和Back做成浮動。<br>本來這種改動也沒影響到我。但老豆曰: </p>
+<blo]]>
+    </summary>
+    
+      <category term="Android" scheme="http://woohaha.github.io/tags/Android/"/>
+    
+      <category term="Hacks" scheme="http://woohaha.github.io/tags/Hacks/"/>
+    
+      <category term="Skills" scheme="http://woohaha.github.io/tags/Skills/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/06/Hello-World/"/>
-    <id>http://yoursite.com/2016/01/06/Hello-World/</id>
+    <link href="http://woohaha.github.io/2016/01/06/Hello-World/"/>
+    <id>http://woohaha.github.io/2016/01/06/Hello-World/</id>
     <published>2016-01-06T15:13:43.000Z</published>
     <updated>2016-01-06T15:15:50.178Z</updated>
     <content type="html"><![CDATA[<p>這是一篇用來證明該blog可以運作的文章。</p>
@@ -27,7 +61,7 @@
 ]]>
     </summary>
     
-      <category term="閒話" scheme="http://yoursite.com/tags/%E9%96%92%E8%A9%B1/"/>
+      <category term="閒話" scheme="http://woohaha.github.io/tags/%E9%96%92%E8%A9%B1/"/>
     
   </entry>
   
